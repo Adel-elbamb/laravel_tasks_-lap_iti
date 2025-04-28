@@ -3,7 +3,7 @@
 @section('content')
     <h1>{{ $post['title'] }}</h1>
     <p><strong>Author:</strong> {{ $post['author'] }}</p>
-    <p><strong brengen, het is een eenvoudige maar krachtige manier om dynamische inhoud te maken.</p>
+    <p><strong>Created At:</strong> {{ $post['created_at'] }}</p>
     <p>{{ $post['body'] }}</p>
     <a href="{{ route('posts.index') }}" class="btn btn-secondary">Back to Posts</a>
     <a href="{{ route('posts.edit', $post['id']) }}" class="btn btn-warning">Edit</a>
